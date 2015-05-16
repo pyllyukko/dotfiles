@@ -40,6 +40,10 @@ endif
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
+  " C-L from http://vim.wikia.com/wiki/Example_vimrc
+  " Map <C-L> (redraw screen) to also turn off search highlighting until the
+  " next search
+  nnoremap <C-L> :nohl<CR><C-L>
   colorscheme pablo
 endif
 
