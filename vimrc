@@ -65,6 +65,11 @@ set cryptmethod=blowfish
 " set spell
 set spelllang=en
 
+" indent with two spaces
+set shiftwidth=2
+set tabstop=8		" standard tab width
+set noexpandtab		" tab is a tab
+
 " from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 "   1. highlight trailing whitespace in red
 "   2. have this highlighting not appear whilst you are typing in insert mode
