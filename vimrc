@@ -40,6 +40,7 @@ endif
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
+  colorscheme pablo
 endif
 
 " Use case insensitive search, except when using capital letters
