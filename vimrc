@@ -64,6 +64,7 @@ set cryptmethod=blowfish
 " from http://vim.wikia.com/wiki/Showing_syntax_highlight_group_in_statusline
 " more statuslines:
 "   http://www.linux.com/archive/feature/120126
+set laststatus=2        " always show status line
 function! SyntaxItem()
   return synIDattr(synID(line("."),col("."),1),"name")
 endfunction
