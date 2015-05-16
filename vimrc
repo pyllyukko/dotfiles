@@ -71,17 +71,6 @@ set shiftwidth=2
 set tabstop=8		" standard tab width
 set noexpandtab		" tab is a tab
 
-" from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
-"   1. highlight trailing whitespace in red
-"   2. have this highlighting not appear whilst you are typing in insert mode
-"   3. have the highlighting of whitespace apply when you open new buffers
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
 " from http://vim.wikia.com/wiki/Showing_syntax_highlight_group_in_statusline
 " more statuslines:
 "   http://www.linux.com/archive/feature/120126
@@ -137,6 +126,17 @@ if has("autocmd")
 
   " http://vim.wikia.com/wiki/Word_wrap_without_line_breaks
   au BufRead,BufNewFile *.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
+
+  " from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+  "   1. highlight trailing whitespace in red
+  "   2. have this highlighting not appear whilst you are typing in insert mode
+  "   3. have the highlighting of whitespace apply when you open new buffers
+  highlight ExtraWhitespace ctermbg=red guibg=red
+  match ExtraWhitespace /\s\+$/
+  autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+  autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+  autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+  autocmd BufWinLeave * call clearmatches()
 
 else
 
