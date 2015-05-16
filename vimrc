@@ -61,6 +61,30 @@ set scrolloff=3
 " use blowfish
 set cryptmethod=blowfish
 
+" from http://vim.wikia.com/wiki/Showing_syntax_highlight_group_in_statusline
+" more statuslines:
+"   http://www.linux.com/archive/feature/120126
+function! SyntaxItem()
+  return synIDattr(synID(line("."),col("."),1),"name")
+endfunction
+if has('statusline')
+  set statusline=%#Question#                   " set highlighting
+  set statusline+=%-2.2n\                      " buffer number
+  set statusline+=%#WarningMsg#                " set highlighting
+  set statusline+=%f\                          " file name
+  set statusline+=%#Question#                  " set highlighting
+  set statusline+=%h%m%r%w\                    " flags
+  set statusline+=%{strlen(&ft)?&ft:'none'},   " file type
+  set statusline+=%{(&fenc==\"\"?&enc:&fenc)}, " encoding
+  set statusline+=%{((exists(\"+bomb\")\ &&\ &bomb)?\"B,\":\"\")} " BOM
+  set statusline+=%{&fileformat},              " file format
+  set statusline+=%{&spelllang},               " language of spelling checker
+  set statusline+=%{SyntaxItem()}              " syntax highlight group under cursor
+  set statusline+=%=                           " ident to the right
+  set statusline+=0x%-8B\                      " character code under cursor
+  set statusline+=%-7.(%l,%c%V%)\ %<%P         " cursor position/offset
+endif
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
