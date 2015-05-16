@@ -58,6 +58,9 @@ set relativenumber
 " Maintain more context around the cursor
 set scrolloff=3
 
+" use blowfish
+set cryptmethod=blowfish
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
