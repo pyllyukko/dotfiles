@@ -52,6 +52,9 @@ set secure
 " disable swap files
 set noswapfile
 
+" relative line numbers. so much easier to jump between lines
+set relativenumber
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
