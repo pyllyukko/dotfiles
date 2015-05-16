@@ -135,6 +135,9 @@ if has("autocmd")
 
   augroup END
 
+  " http://vim.wikia.com/wiki/Word_wrap_without_line_breaks
+  au BufRead,BufNewFile *.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
+
 else
 
   set autoindent		" always set autoindenting on
