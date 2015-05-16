@@ -95,9 +95,7 @@ function! GuiTabLabel()
     let name = fnamemodify(name,":t")
   endif
   let label .= name
-  " Append the number of windows in the tab page
-  let wincount = tabpagewinnr(v:lnum, '$')
-  return label . '  [' . wincount . ']'
+  return label
 endfunction
 set guitablabel=%{GuiTabLabel()}
 
