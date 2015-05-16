@@ -42,6 +42,10 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+" Use case insensitive search, except when using capital letters
+set ignorecase
+set smartcase
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
