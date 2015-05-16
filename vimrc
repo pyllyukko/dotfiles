@@ -61,6 +61,10 @@ set scrolloff=3
 " use blowfish
 set cryptmethod=blowfish
 
+" spell checking stuff
+" set spell
+set spelllang=en
+
 " from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 "   1. highlight trailing whitespace in red
 "   2. have this highlighting not appear whilst you are typing in insert mode
