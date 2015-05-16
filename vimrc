@@ -55,6 +55,9 @@ set noswapfile
 " relative line numbers. so much easier to jump between lines
 set relativenumber
 
+" Maintain more context around the cursor
+set scrolloff=3
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
