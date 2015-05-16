@@ -67,7 +67,7 @@ set tabstop=8		" standard tab width
 set noexpandtab		" tab is a tab
 
 " http://vim.wikia.com/wiki/Show_tab_number_in_your_tab_line
-set showtabline=2 " always show tabs in gvim, but not vim
+set showtabline=1
 " set up tab labels with tab number, buffer name, number of windows
 function! GuiTabLabel()
   let label = ''
