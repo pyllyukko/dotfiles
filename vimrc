@@ -46,6 +46,12 @@ endif
 set ignorecase
 set smartcase
 
+" for added security. don't use temp files, use pipes instead.
+set noshelltemp
+set secure
+" disable swap files
+set noswapfile
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
