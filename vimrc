@@ -48,6 +48,11 @@ set secure
 " disable swap files
 set noswapfile
 
+" this shouldn't matter with nocompatible, but we'll set it anyway
+" http://vim.wikia.com/wiki/Modeline_magic
+" http://usevim.com/2012/03/28/modelines/
+set nomodeline
+
 " relative line numbers. so much easier to jump between lines
 set relativenumber
 
