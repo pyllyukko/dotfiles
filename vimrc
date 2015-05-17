@@ -53,6 +53,10 @@ set noswapfile
 " http://usevim.com/2012/03/28/modelines/
 set nomodeline
 
+" http://vim.wikia.com/wiki/Encryption
+" viminfo can be a treasure trove of sensitive information
+set viminfo=
+
 " relative line numbers. so much easier to jump between lines
 set relativenumber
 
