@@ -75,6 +75,8 @@ set shiftwidth=2
 set tabstop=8		" standard tab width
 set noexpandtab		" tab is a tab
 
+set visualbell
+
 " http://vim.wikia.com/wiki/Show_tab_number_in_your_tab_line
 set showtabline=1
 " set up tab labels with tab number, buffer name, number of windows
