@@ -169,6 +169,8 @@ if has("autocmd")
 
   " http://vim.wikia.com/wiki/Word_wrap_without_line_breaks
   au BufRead,BufNewFile *.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
+  " .md is markdown and not modula2
+  au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
   " from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
   "   1. highlight trailing whitespace in red
