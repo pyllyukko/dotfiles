@@ -153,8 +153,8 @@ if has("autocmd")
   " Remove ALL autocommands for the current group.
   au!
 
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+  " http://vim.wikia.com/wiki/Word_wrap_without_line_breaks
+  autocmd FileType text setlocal wrap linebreak nolist textwidth=0 wrapmargin=0
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
