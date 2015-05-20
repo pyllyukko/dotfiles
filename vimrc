@@ -168,8 +168,6 @@ if has("autocmd")
 
   augroup END
 
-  " http://vim.wikia.com/wiki/Word_wrap_without_line_breaks
-  au BufRead,BufNewFile *.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
   " .md is markdown and not modula2
   au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
