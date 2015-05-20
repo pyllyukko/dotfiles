@@ -150,6 +150,7 @@ if has("autocmd")
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
+  " Remove ALL autocommands for the current group.
   au!
 
   " For all text files set 'textwidth' to 78 characters.
