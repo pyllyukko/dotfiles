@@ -20,3 +20,13 @@ if [ "${USER}" = "root" ]
 then
   TMOUT=1200
 fi
+
+LESSHISTFILE="/dev/null"
+if [ -f /usr/bin/lesspipe.sh ]
+then
+  LESSOPEN="|/usr/bin/lesspipe.sh %s"
+elif [ -f /usr/bin/lesspipe ]
+then
+  LESSOPEN="|/usr/bin/lesspipe %s"
+fi
+export LESSOPEN
