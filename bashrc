@@ -14,3 +14,9 @@ alias ls='ls ${LS_OPTIONS}'
 shopt -s checkwinsize
 
 HISTCONTROL="ignoreboth"
+
+# set session timeout for root
+if [ "${USER}" = "root" ]
+then
+  TMOUT=1200
+fi
