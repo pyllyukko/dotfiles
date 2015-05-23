@@ -22,6 +22,7 @@ then
 fi
 
 LESSHISTFILE="/dev/null"
+LESSSECURE=1
 if [ -f /usr/bin/lesspipe.sh ]
 then
   LESSOPEN="|/usr/bin/lesspipe.sh %s"
@@ -30,3 +31,5 @@ then
   LESSOPEN="|/usr/bin/lesspipe %s"
 fi
 export LESSOPEN
+export PAGER="/usr/bin/less"
+export EDITOR="/usr/bin/vim"
