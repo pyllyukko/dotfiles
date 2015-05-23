@@ -8,7 +8,7 @@ else
 fi
 
 export LS_OPTIONS='--color=auto'
-eval "`/bin/dircolors -b`"
+eval "`/usr/bin/dircolors -b`"
 alias ls='ls ${LS_OPTIONS}'
 
 shopt -s checkwinsize
