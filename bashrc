@@ -8,3 +8,7 @@ fi
 export LS_OPTIONS='--color=auto'
 eval "`/bin/dircolors -b`"
 alias ls='ls ${LS_OPTIONS}'
+
+shopt -s checkwinsize
+
+export HISTCONTROL="ignoreboth"
