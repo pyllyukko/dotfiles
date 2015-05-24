@@ -41,3 +41,8 @@ if [ -z "${BASH_COMPLETION_COMPAT_DIR}" -a -f /usr/share/bash-completion/bash_co
 then
   . /usr/share/bash-completion/bash_completion
 fi
+
+# jump between words with ctrl-(left|right)
+# https://stackoverflow.com/questions/5029118/bash-ctrl-to-move-cursor-between-words-strings
+bind '"\e[1;5C":forward-word'
+bind '"\e[1;5D":backward-word'
