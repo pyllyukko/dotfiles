@@ -81,6 +81,8 @@ set visualbell
 " Automatically read a file that has changed on disk
 set autoread
 
+set guioptions-=T  "remove toolbar
+
 " http://vim.wikia.com/wiki/Show_tab_number_in_your_tab_line
 set showtabline=1
 " set up tab labels with tab number, buffer name, number of windows
