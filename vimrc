@@ -89,6 +89,7 @@ set foldmethod=syntax
 set foldnestmax=5
 " sh.vim
 let g:sh_fold_enabled=3	" (enables function and heredoc folding)
+let g:xml_syntax_folding=1
 
 " http://vim.wikia.com/wiki/Show_tab_number_in_your_tab_line
 set showtabline=1
