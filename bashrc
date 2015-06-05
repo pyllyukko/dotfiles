@@ -1,4 +1,11 @@
 # prompt
+
+# CentOS global bashrc
+if [ -f /etc/bashrc ]
+then
+  source /etc/bashrc
+fi
+
 charmap=$( locale charmap )
 if [ "${charmap}" = "UTF-8" ]
 then
