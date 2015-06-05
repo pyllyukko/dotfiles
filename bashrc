@@ -30,9 +30,11 @@ fi
 
 LESSHISTFILE="/dev/null"
 LESSSECURE=1
+# slackware
 if [ -f /usr/bin/lesspipe.sh ]
 then
   LESSOPEN="|/usr/bin/lesspipe.sh %s"
+# debian
 elif [ -f /usr/bin/lesspipe ]
 then
   LESSOPEN="|/usr/bin/lesspipe %s"
