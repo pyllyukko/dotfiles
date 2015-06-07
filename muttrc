@@ -6,19 +6,22 @@
 set folder=""
 # http://vim.wikia.com/wiki/Category:Email
 set editor=/usr/bin/vim
-set pager_stop              # don't move to the next message on next-page
 # http://stateless.geek.nz/2005/02/24/mutt-thread-sort-by-most-recent/
 # http://inodes.org/2008/04/14/sorting-in-mutt/
 set sort=threads                        # primary sorting method
 set sort_aux=last-date-received
 set index_format="%4C %Z %{%b %d %y} %-15.15F (%?l?%4l&%4c?) %?H?[spam:%H] ?%s" # show year also
 set postpone=ask-no
-set pgp_long_ids
 set certificate_file=~/.mutt/certificates	# from http://mutt.sourceforge.net/imap/README.SSL
 set imap_authenticators=login
-set edit_headers
 set move=no
+
+set	pgp_long_ids
+set	pgp_autosign
+set	edit_headers
+set	pager_stop              # don't move to the next message on next-page
 unset	mark_old		# i don't care about whether a message is old
+unset	smime_is_default
 
 unignore date	# show date in the mail reader
 
