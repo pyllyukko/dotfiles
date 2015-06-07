@@ -1,0 +1,20 @@
+# generic settings for .muttrc
+
+# this prevents Mutt from endlessly asking:
+#     "~/Mail does not exist. Create it? ([yes]/no):"
+# from http://www.noah.org/wiki/Mutt
+set folder=""
+set editor=/usr/bin/vim
+set pager_stop              # don't move to the next message on next-page
+set sort=threads                        # primary sorting method
+set sort_aux=last-date-received
+set index_format="%4C %Z %{%b %d %y} %-15.15F (%?l?%4l&%4c?) %?H?[spam:%H] ?%s" # show year also
+set postpone=ask-no
+set pgp_long_ids
+set certificate_file=~/.mutt/certificates	# from http://mutt.sourceforge.net/imap/README.SSL
+set imap_authenticators=login
+
+unignore date	# show date in the mail reader
+
+# key bindings
+bind index G            imap-fetch-mail
