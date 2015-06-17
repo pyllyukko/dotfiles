@@ -10,7 +10,7 @@ set editor=/usr/bin/vim
 # http://inodes.org/2008/04/14/sorting-in-mutt/
 set sort=threads                        # primary sorting method
 set sort_aux=last-date-received
-set index_format="%4C %Z %{%b %d %y} %-15.15F (%?l?%4l&%4c?) %?H?[spam:%H] ?%s" # show year also
+set index_format="%4C %Z %{%b %d %y %H:%M} %-15.15F (%?l?%6l&%6c?) %?H?[spam:%H] ?%s"
 set postpone=ask-no
 set certificate_file=~/.mutt/certificates	# from http://mutt.sourceforge.net/imap/README.SSL
 set imap_authenticators=login
