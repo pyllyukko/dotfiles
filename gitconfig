@@ -4,3 +4,5 @@
 	branch = auto
 [log]
 	decorate = true
+[push]
+	default = simple
