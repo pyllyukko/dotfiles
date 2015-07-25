@@ -7,11 +7,17 @@ then
 fi
 
 charmap=$( locale charmap )
+if [ "${TERM}" = "xterm" ]
+then
+  TITLEBAR='\[\033]0;@\h\007\]'
+else
+  TITLEBAR=""
+fi
 if [ "${charmap}" = "UTF-8" ]
 then
-  PS1="\$? \$([ \$? -eq 0 ] && echo \"\[\033[01;32m\]\342\234\223\[\033[00m\]\" || echo \"\[\033[01;31m\]\342\234\227\[\033[00m\]\") \[\e]0;@\h \a\]@\h:\w\\$ "
+  PS1="${TITLEBAR}\$? \$([ \$? -eq 0 ] && echo \"\[\033[01;32m\]\342\234\223\[\033[00m\]\" || echo \"\[\033[01;31m\]\342\234\227\[\033[00m\]\") @\h:\w\\$ "
 else
-  PS1='\[\e]0;@\h \a\]@\h:\W\$ '
+  PS1="${TITLEBAR}@\h:\W\\$ "
 fi
 
 LS_OPTIONS='--color=auto'
