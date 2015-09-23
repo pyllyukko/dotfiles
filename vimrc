@@ -36,7 +36,7 @@ if &t_Co > 2 || has("gui_running")
   " Map <C-L> (redraw screen) to also turn off search highlighting until the
   " next search
   nnoremap <C-L> :nohl<CR><C-L>
-  colorscheme pablo
+  colorscheme torte
 endif
 
 " Use case insensitive search, except when using capital letters
