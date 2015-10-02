@@ -46,6 +46,7 @@ then
   LESSOPEN="|/usr/bin/lesspipe %s"
 fi
 export LESSOPEN
+export LESS="--RAW-CONTROL-CHARS"
 export PAGER="/usr/bin/less"
 export EDITOR="/usr/bin/vim"
 
