@@ -1,2 +1,6 @@
 defutf8		on
 startup_message	off
+# detach on hangup
+autodetach	on
+defscrollback	1000
+caption		splitonly
