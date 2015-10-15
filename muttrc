@@ -27,3 +27,6 @@ unignore date	# show date in the mail reader
 
 # key bindings
 bind index G            imap-fetch-mail
+
+# colors
+color index brightgreen default ~F	# flagged messages
