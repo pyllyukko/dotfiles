@@ -29,6 +29,7 @@ set	copy			# always save a copy of outgoing messages
 set	imap_servernoise
 set	tilde			# virtual lines to pad blank lines in the pager
 set	honor_disposition	# don't render plaintext attachments inline. also useful when replying to such messages.
+unset	user_agent
 
 unignore date	# show date in the mail reader
 
