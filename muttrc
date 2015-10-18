@@ -15,6 +15,8 @@ set postpone=ask-no
 set certificate_file=~/.mutt/certificates	# from http://mutt.sourceforge.net/imap/README.SSL
 set imap_authenticators=login
 set move=no
+set header_cache=~/.mutt/header_cache
+set smime_ask_cert_label=no
 
 set	pgp_long_ids
 set	pgp_autosign
@@ -22,6 +24,10 @@ set	edit_headers
 set	pager_stop              # don't move to the next message on next-page
 unset	mark_old		# i don't care about whether a message is old
 unset	smime_is_default
+unset	ascii_chars
+set	copy			# always save a copy of outgoing messages
+set	imap_servernoise
+set	tilde			# virtual lines to pad blank lines in the pager
 
 unignore date	# show date in the mail reader
 
