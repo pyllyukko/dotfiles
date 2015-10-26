@@ -53,3 +53,5 @@ bind index G            imap-fetch-mail
 color index brightgreen default ~F	# flagged messages
 color body brightgreen default "^gpg: Good signature from .*"
 color body brightred default "^gpg: BAD signature from .*"
+color body brightgreen default "^Verification successful$"
+color body brightred default "^Verification failure$"
