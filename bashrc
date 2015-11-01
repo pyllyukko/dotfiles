@@ -47,7 +47,8 @@ then
 fi
 export LESSOPEN
 export LESS="--RAW-CONTROL-CHARS"
-export PAGER="/usr/bin/less"
+export PAGER="/usr/bin/less -i"
+export MANPAGER="/usr/bin/less -is"
 export EDITOR="/usr/bin/vim"
 export GREP_OPTIONS="--color=auto"
 
