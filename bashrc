@@ -23,6 +23,9 @@ fi
 LS_OPTIONS='--color=auto'
 eval "`/usr/bin/dircolors -b`"
 alias ls='ls ${LS_OPTIONS}'
+# http://vim.wikia.com/wiki/Enable_servername_capability_in_vim/xterm
+# http://vim.wikia.com/wiki/Launch_files_in_new_tabs_under_Unix
+alias gvim='gvim -p --servername vim --remote-tab-silent'
 
 shopt -s checkwinsize
 
