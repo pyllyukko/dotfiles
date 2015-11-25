@@ -19,6 +19,7 @@ set header_cache=~/.mutt/header_cache
 set smime_ask_cert_label=no
 set smime_encrypt_with="aes256"
 set forward_format="Fwd: %s"
+set reply_regexp="^(re|aw|vs):[ \t]*"
 
 set	pgp_long_ids
 set	pgp_autosign
