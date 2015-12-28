@@ -33,6 +33,8 @@ set	imap_servernoise
 set	tilde			# virtual lines to pad blank lines in the pager
 set	honor_disposition	# don't render plaintext attachments inline. also useful when replying to such messages.
 unset	user_agent
+#set	crypt_replysign
+set	crypt_replyencrypt
 
 # TLS stuff
 #set	ssl_min_dh_prime_bits=1024
