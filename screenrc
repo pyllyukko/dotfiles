@@ -4,4 +4,3 @@ startup_message	off
 autodetach	on
 defscrollback	1000
 caption		splitonly
-setenv		LANG en_US.UTF-8
