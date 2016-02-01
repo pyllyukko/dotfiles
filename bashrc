@@ -20,6 +20,10 @@ else
   PS1="${TITLEBAR}@\h:\W\\$ "
 fi
 
+# https://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
+GPG_TTY=$(tty)
+export GPG_TTY
+
 LS_OPTIONS='--color=auto'
 eval "`/usr/bin/dircolors -b`"
 alias ls='ls ${LS_OPTIONS}'
