@@ -23,6 +23,13 @@ fi
 # https://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
 GPG_TTY=$(tty)
 export GPG_TTY
+if [ -f "${HOME}/.gnupg/gpg-agent-info-$(hostname)" ]
+then
+  . "${HOME}/.gnupg/gpg-agent-info-$(hostname)"
+  export GPG_AGENT_INFO
+  export SSH_AUTH_SOCK
+fi
+
 
 LS_OPTIONS='--color=auto'
 eval "`/usr/bin/dircolors -b`"
