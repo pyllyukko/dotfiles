@@ -35,6 +35,7 @@ set	honor_disposition	# don't render plaintext attachments inline. also useful w
 unset	user_agent
 #set	crypt_replysign
 set	crypt_replyencrypt
+set	nohelp
 
 # TLS stuff
 #set	ssl_min_dh_prime_bits=1024
