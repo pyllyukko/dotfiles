@@ -36,6 +36,7 @@ unset	user_agent
 #set	crypt_replysign
 set	crypt_replyencrypt
 set	nohelp
+set	nomarkers
 
 # TLS stuff
 #set	ssl_min_dh_prime_bits=1024
