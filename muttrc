@@ -21,6 +21,8 @@ set smime_encrypt_with="aes256"
 set forward_format="Fwd: %s"
 set reply_regexp="^(re|aw|vs):[ \t]*"
 
+alternative_order text/plain text/html
+
 set	pgp_long_ids
 set	pgp_autosign
 set	edit_headers
