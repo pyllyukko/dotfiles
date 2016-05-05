@@ -189,7 +189,7 @@ if has("autocmd")
   highlight ExtraWhitespace ctermbg=red guibg=red
   " Show trailing whitespace and spaces before a tab:
   match ExtraWhitespace /\s\+$\| \+\ze\t/
-  autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+  autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
   autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
   autocmd InsertLeave * match ExtraWhitespace /\s\+$/
   autocmd BufWinLeave * call clearmatches()
