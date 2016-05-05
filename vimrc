@@ -191,7 +191,7 @@ if has("autocmd")
   match ExtraWhitespace /\s\+$\| \+\ze\t/
   autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
   autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-  autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+  autocmd InsertLeave * match ExtraWhitespace /\s\+$\| \+\ze\t/
   autocmd BufWinLeave * call clearmatches()
   " activate with 'set list'
   set listchars=eol:$,tab:>-
