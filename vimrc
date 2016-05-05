@@ -84,6 +84,10 @@ set autoread
 
 set guioptions-=T  "remove toolbar
 
+" http://vim.wikia.com/wiki/Dictionary_completions
+set dictionary=/usr/share/dict/words
+set complete+=k
+
 " http://vim.wikia.com/wiki/Folding#Syntax_folding
 set foldmethod=syntax
 " http://vimdoc.sourceforge.net/htmldoc/options.html#%27foldnestmax%27
