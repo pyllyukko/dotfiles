@@ -187,11 +187,13 @@ if has("autocmd")
   "   2. have this highlighting not appear whilst you are typing in insert mode
   "   3. have the highlighting of whitespace apply when you open new buffers
   highlight ExtraWhitespace ctermbg=red guibg=red
-  match ExtraWhitespace /\s\+$/
+  " Show trailing whitespace and spaces before a tab:
+  match ExtraWhitespace /\s\+$\| \+\ze\t/
   autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
   autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
   autocmd InsertLeave * match ExtraWhitespace /\s\+$/
   autocmd BufWinLeave * call clearmatches()
+  " activate with 'set list'
   set listchars=eol:$,tab:>-
 
 else
