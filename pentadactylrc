@@ -1,3 +1,4 @@
 set guioptions=bCrsT
 set defsearch=duckduckgo
 set complete=location,file
+set hlfind
