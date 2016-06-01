@@ -183,6 +183,9 @@ if has("autocmd")
 
   augroup END
 
+  " use colorcolumn, when writing mails
+  au Filetype mail set cc=+1
+
   " .md is markdown and not modula2
   au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
