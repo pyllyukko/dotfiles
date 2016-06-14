@@ -3,4 +3,5 @@ startup_message	off
 # detach on hangup
 autodetach	on
 defscrollback	1000
-caption		always "%{= ck}[ %-w(%{= cW}%n %t%{= ck})%+w ]%=[ %l ]"
+caption		always "%{= ck}[ %-w%{= cW}%n %t%{= ck}%+w ]%=[ %l ]"
+hardstatus	off
