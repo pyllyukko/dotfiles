@@ -83,6 +83,8 @@ set visualbell
 set autoread
 
 set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=m  "remove menu bar
 
 " http://vim.wikia.com/wiki/Dictionary_completions
 set dictionary=/usr/share/dict/words
