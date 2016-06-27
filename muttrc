@@ -41,7 +41,7 @@ set	nohelp
 set	nomarkers
 set	sig_dashes
 set	xterm_set_titles
-set	xterm_title="Mutt"
+set	xterm_title="Mutt @%h"
 
 # TLS stuff
 #set	ssl_min_dh_prime_bits=1024
