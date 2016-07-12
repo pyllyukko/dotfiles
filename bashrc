@@ -66,7 +66,7 @@ export LESS="--RAW-CONTROL-CHARS"
 export PAGER="/usr/bin/less -i"
 export MANPAGER="/usr/bin/less -is"
 export EDITOR="/usr/bin/vim"
-export GREP_OPTIONS="--color=auto"
+#export GREP_OPTIONS="--color=auto"
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
