@@ -20,6 +20,7 @@ then
   fi
   set +x
 fi
+unset PID_FILE
 
 if [ -f ~/.bashrc ]
 then
