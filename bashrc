@@ -23,15 +23,16 @@ fi
 # https://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
 GPG_TTY=$(tty)
 export GPG_TTY
-#if [ -f "${HOME}/.gnupg/gpg-agent-info-$(hostname)" ]
-#then
-#  . "${HOME}/.gnupg/gpg-agent-info-$(hostname)"
-#  export GPG_AGENT_INFO
-#  export SSH_AUTH_SOCK
-#fi
+# GnuPG 2.1
 if [ -S ~/.gnupg/S.gpg-agent.ssh ]
 then
   export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
+# old method
+elif [ -f "${HOME}/.gnupg/gpg-agent-info-$(hostname)" ]
+then
+  . "${HOME}/.gnupg/gpg-agent-info-$(hostname)"
+  export GPG_AGENT_INFO
+  export SSH_AUTH_SOCK
 fi
 
 LS_OPTIONS='--color=auto'
