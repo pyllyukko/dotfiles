@@ -21,8 +21,7 @@ else
 fi
 
 # https://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
-GPG_TTY=$(tty)
-export GPG_TTY
+export GPG_TTY=$(tty)
 # GnuPG 2.1
 if [ -S ~/.gnupg/S.gpg-agent.ssh ]
 then
