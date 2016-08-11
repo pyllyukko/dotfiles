@@ -81,7 +81,7 @@ export EDITOR="/usr/bin/vim"
 #export GREP_OPTIONS="--color=auto"
 if [ -n "${GOROOT}" ]
 then
-  export GOPATH="${HOME}/src/go"
+  export GOPATH="${HOME}/go"
   export PATH="${PATH}:${GOPATH}/bin"
 fi
 
