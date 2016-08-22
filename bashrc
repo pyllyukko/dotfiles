@@ -55,6 +55,7 @@ fi
 shopt -s checkwinsize
 
 HISTCONTROL="ignoreboth"
+export HISTIGNORE="bitcoin-cli walletpassphrase *"
 
 # set session timeout for root
 if [ "${USER}" = "root" ]
