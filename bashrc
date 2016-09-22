@@ -34,6 +34,12 @@ then
   export SSH_AUTH_SOCK
 fi
 
+# https://www.gnupg.org/documentation/manuals/gnupg/Common-Problems.html
+if [ -n "${SSH_CONNECTION}" ]
+then
+  gpg-connect-agent updatestartuptty /bye
+fi
+
 LS_OPTIONS='--color=auto'
 eval "`/usr/bin/dircolors -b`"
 alias ls='ls ${LS_OPTIONS}'
