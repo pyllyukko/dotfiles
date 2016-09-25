@@ -38,6 +38,9 @@ fi
 if [ -n "${SSH_CONNECTION}" ]
 then
   gpg-connect-agent updatestartuptty /bye
+else
+  # only use this locally
+  alias gvim='gvim -p --servername gvim --remote-tab-silent'
 fi
 
 LS_OPTIONS='--color=auto'
@@ -45,7 +48,6 @@ eval "`/usr/bin/dircolors -b`"
 alias ls='ls ${LS_OPTIONS}'
 # http://vim.wikia.com/wiki/Enable_servername_capability_in_vim/xterm
 # http://vim.wikia.com/wiki/Launch_files_in_new_tabs_under_Unix
-alias gvim='gvim -p --servername gvim --remote-tab-silent'
 export TAR_OPTIONS="--numeric-owner"
 
 threads=$(cat /proc/cpuinfo | grep vendor_id | wc -l)
