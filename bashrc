@@ -7,7 +7,7 @@ then
 fi
 
 charmap=$( locale charmap )
-if [ "${TERM}" = "xterm" ]
+if [[ ${TERM} =~ ^xterm.* ]]
 then
   TITLEBAR='\[\033]0;@\h\007\]'
 else
