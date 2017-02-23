@@ -120,3 +120,4 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # https://stackoverflow.com/questions/5029118/bash-ctrl-to-move-cursor-between-words-strings
 bind '"\e[1;5C":forward-word'
 bind '"\e[1;5D":backward-word'
+# TODO: ctrl-backspace
