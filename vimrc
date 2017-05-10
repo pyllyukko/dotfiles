@@ -197,10 +197,10 @@ if has("autocmd")
   "   3. have the highlighting of whitespace apply when you open new buffers
   highlight ExtraWhitespace ctermbg=red guibg=red
   " Show trailing whitespace and spaces before a tab:
-  match ExtraWhitespace /\s\+$\| \+\ze\t/
-  autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
+  match ExtraWhitespace /\s\+$\| \+\ze\t\| \+/
+  autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t\| \+/
   autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-  autocmd InsertLeave * match ExtraWhitespace /\s\+$\| \+\ze\t/
+  autocmd InsertLeave * match ExtraWhitespace /\s\+$\| \+\ze\t\| \+/
   autocmd BufWinLeave * call clearmatches()
   " activate with 'set list'
   set listchars=eol:$,tab:>-
