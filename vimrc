@@ -60,6 +60,9 @@ set viminfo=
 
 " relative line numbers. so much easier to jump between lines
 set relativenumber
+" show actual line number in position 0
+" http://vim.wikia.com/wiki/Display_line_numbers#Relative_line_numbers
+set number
 
 " Maintain more context around the cursor
 set scrolloff=3
