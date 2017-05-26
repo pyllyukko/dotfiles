@@ -1,2 +1,3 @@
 e scr.color = true
 e scr.utf8 = true
+e asm.syntax = intel
