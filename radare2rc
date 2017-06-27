@@ -1,4 +1,5 @@
 e scr.color = true
+e scr.truecolor = 2
 e scr.utf8 = true
 e asm.syntax = intel
 e asm.pseudo = false
