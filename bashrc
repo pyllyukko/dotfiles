@@ -15,7 +15,19 @@ else
 fi
 if [ "${charmap}" = "UTF-8" ]
 then
-  PS1="${TITLEBAR}\$? \$([ \$? -eq 0 ] && echo \"\[\033[01;32m\]\342\234\223\[\033[00m\]\" || echo \"\[\033[01;31m\]\342\234\227\[\033[00m\]\") @\h:\w\\$ "
+  if [ -f /usr/doc/git-*/contrib/completion/git-prompt.sh ]
+  then
+    . /usr/doc/git-*/contrib/completion/git-prompt.sh
+  fi
+  if declare -F __git_ps1 1>/dev/null
+  then
+    #PS1="${TITLEBAR}\$? \$([ \$? -eq 0 ] && echo \"\[\033[01;32m\]\342\234\223\[\033[00m\]\" || echo \"\[\033[01;31m\]\342\234\227\[\033[00m\]\") @\h:\w\$(__git_ps1 \" (%s)\")\\$ "
+    GIT_PS1_SHOWDIRTYSTATE=true
+    GIT_PS1_SHOWCOLORHINTS=true
+    PROMPT_COMMAND='__git_ps1 "${TITLEBAR}\$? \$([ \$? -eq 0 ] && echo \"\[\033[01;32m\]\342\234\223\[\033[00m\]\" || echo \"\[\033[01;31m\]\342\234\227\[\033[00m\]\") @\h:\w" "\\\$ "'
+  else
+    PS1="${TITLEBAR}\$? \$([ \$? -eq 0 ] && echo \"\[\033[01;32m\]\342\234\223\[\033[00m\]\" || echo \"\[\033[01;31m\]\342\234\227\[\033[00m\]\") @\h:\w\\$ "
+  fi
 else
   PS1="${TITLEBAR}@\h:\W\\$ "
 fi
