@@ -101,6 +101,9 @@ set foldnestmax=5
 let g:sh_fold_enabled=3	" (enables function and heredoc folding)
 let g:xml_syntax_folding=1
 
+" https://stackoverflow.com/questions/5017500/vim-difficulty-setting-up-ctags-source-in-subdirectories-dont-see-tags-file-i
+set tags=./tags;~
+
 " http://vim.wikia.com/wiki/Show_tab_number_in_your_tab_line
 set showtabline=1
 " set up tab labels with tab number, buffer name, number of windows
