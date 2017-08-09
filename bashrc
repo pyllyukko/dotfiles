@@ -13,6 +13,10 @@ then
 else
   TITLEBAR=""
 fi
+if [ -z "${BASH_COMPLETION_COMPAT_DIR}" -a -f /usr/share/bash-completion/bash_completion ]
+then
+  . /usr/share/bash-completion/bash_completion
+fi
 if [ "${charmap}" = "UTF-8" ]
 then
   if [ -f /usr/doc/git-*/contrib/completion/git-prompt.sh ]
@@ -111,11 +115,6 @@ fi
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-if [ -z "${BASH_COMPLETION_COMPAT_DIR}" -a -f /usr/share/bash-completion/bash_completion ]
-then
-  . /usr/share/bash-completion/bash_completion
-fi
 
 # jump between words with ctrl-(left|right)
 # https://stackoverflow.com/questions/5029118/bash-ctrl-to-move-cursor-between-words-strings
