@@ -74,7 +74,7 @@ export	BUNDLEJOBS=${threads}
 export	MAKEFLAGS="-j ${threads}"
 unset	threads
 
-if /usr/bin/gpg2 --version | head -1 | grep -q "^gpg.*2\.1.[0-9]\+$"
+if /usr/bin/gpg2 --version 2>/dev/null | head -1 | grep -q "^gpg.*2\.1.[0-9]\+$"
 then
   alias gpg='/usr/bin/gpg2'
 fi
