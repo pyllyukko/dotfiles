@@ -261,6 +261,11 @@ if filereadable(expand("~/.vim/autoload/pathogen.vim"))
   execute pathogen#infect()
 endif
 
+if filereadable("/usr/share/clang/clang-format.py")
+  map <C-I> :pyf /usr/share/clang/clang-format.py<cr>
+  imap <C-I> <c-o>:pyf /usr/share/clang/clang-format.py<cr>
+endif
+
 " https://gist.github.com/tpope/287147
 " https://github.com/godlygeek/tabular
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
