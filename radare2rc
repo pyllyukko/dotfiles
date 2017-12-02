@@ -9,4 +9,5 @@ e graph.web = false # https://github.com/radare/radare2/issues/5662
 e anal.strings = true
 e bin.strings = true
 e anal.jmptbl = true
+e cfg.fortunes.type = tips,fun,creepy,nsfw
 e scr.utf8.curvy = true
