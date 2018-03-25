@@ -1,1 +1,1 @@
-text/html; /usr/bin/w3m -I %{charset} -dump %s; nametemplate=%s.html; copiousoutput
+text/html; /usr/bin/w3m -o display_link_number=1 -I %{charset} -dump %s; nametemplate=%s.html; copiousoutput
