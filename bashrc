@@ -121,3 +121,10 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 bind '"\e[1;5C":forward-word'
 bind '"\e[1;5D":backward-word'
 # TODO: ctrl-backspace
+
+# locales
+# https://wiki.debian.org/Locale
+# A4
+export LC_PAPER=fi_FI.utf8
+# week starts on monday
+export LC_TIME=en_GB.utf8
