@@ -29,6 +29,7 @@ set	edit_headers
 set	pager_stop              # don't move to the next message on next-page
 unset	mark_old		# i don't care about whether a message is old
 unset	smime_is_default
+set	smime_self_encrypt
 unset	ascii_chars
 set	copy			# always save a copy of outgoing messages
 set	imap_servernoise
