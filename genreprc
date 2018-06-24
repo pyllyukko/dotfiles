@@ -1,0 +1,10 @@
+REPOSROOT="/keybase/public/pyllyukko/slackware/slackware64-14.2"
+REPOSOWNER="pyllyukko <pyllyukko@maimed.org>"
+RSS_UUID=4ad1101e-77a4-11e8-8cdf-6c88140f5cb0
+USE_GPGAGENT=1
+RSS_DESCRIPTION="pyllyukko's Slackware package repository"
+RSS_TITLE="pyllyukko's Slackware packages"
+RSS_LINK="https://keybase.pub/pyllyukko/slackware/"
+RSS_ICON="https://secure.gravatar.com/avatar/d9f1c2cdf7fefa46617c2f9ed75b9035"
+FOR_SLAPTGET=0
+RSS_CLURL="https://pyllyukko.keybase.pub/slackware/slackware64-14.2/ChangeLog.txt"
