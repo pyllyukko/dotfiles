@@ -1,4 +1,4 @@
-REPOSROOT="/keybase/public/pyllyukko/slackware/slackware64-14.2"
+REPOSROOT="/home/pyllyukko/.config/keybase/kbfs/public/pyllyukko/slackware/slackware64-14.2"
 REPOSOWNER="pyllyukko <pyllyukko@maimed.org>"
 RSS_UUID=4ad1101e-77a4-11e8-8cdf-6c88140f5cb0
 USE_GPGAGENT=1
