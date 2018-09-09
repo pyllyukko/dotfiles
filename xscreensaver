@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.36 for pyllyukko on Tue Dec  6 11:24:54 2016.
+# Written by xscreensaver-demo 5.40 for pyllyukko on Sun Sep  9 17:30:52 2018.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -106,14 +106,14 @@ programs:								      \
 - GL: 				glplanet -root				    \n\
 -				interference -root			    \n\
 -				kumppa -root				    \n\
-  GL: 				lament -root				    \n\
+- GL: 				lament -root				    \n\
 -				moire2 -root				    \n\
 - GL: 				sonar -root				    \n\
 - GL: 				stairs -root				    \n\
 -				truchet -root				    \n\
 				vidwhacker -root			    \n\
 -				blaster -root				    \n\
-				bumps -root				    \n\
+-				bumps -root				    \n\
 -				ccurve -root				    \n\
 -				compass -root				    \n\
 -				deluxe -root				    \n\
@@ -131,9 +131,9 @@ programs:								      \
 -				squiral -root				    \n\
 -				wander -root				    \n\
 -				webcollage -root			    \n\
-				electricsheep --root 1			    \n\
-				xflame -root				    \n\
-				xmatrix -root				    \n\
+-				electricsheep --root 1			    \n\
+-				xflame -root				    \n\
+-				xmatrix -root				    \n\
   GL: 				gflux -root				    \n\
 -				nerverot -root				    \n\
 -				xrayswarm -root				    \n\
@@ -160,7 +160,7 @@ programs:								      \
 - GL: 				endgame -root				    \n\
 -				euler2d -root				    \n\
 -				fluidballs -root			    \n\
-  GL: 				flurry -root				    \n\
+- GL: 				flurry -root				    \n\
   GL: 				glblur -root				    \n\
 - GL: 				glsnake -root				    \n\
 				halftone -root				    \n\
@@ -181,10 +181,10 @@ programs:								      \
 - GL: 				bouncingcow -root			    \n\
 -				cloudlife -root				    \n\
 - GL: 				cubestorm -root				    \n\
-				eruption -root				    \n\
+-				eruption -root				    \n\
 - GL: 				flipflop -root				    \n\
 - GL: 				flyingtoasters -root			    \n\
-				fontglide -root				    \n\
+-				fontglide -root				    \n\
 - GL: 				gleidescope -root			    \n\
 - GL: 				glknots -root				    \n\
   GL: 				glmatrix -root				    \n\
@@ -195,14 +195,14 @@ programs:								      \
 - GL: 				mirrorblob -root			    \n\
 -				piecewise -root				    \n\
 - GL: 				polytopes -root				    \n\
-				pong -root				    \n\
+-				pong -root				    \n\
 -				popsquares -root			    \n\
 - GL: 				surfaces -root				    \n\
 				xanalogtv -root				    \n\
 -				abstractile -root			    \n\
 -				anemotaxis -root			    \n\
 - GL: 				antinspect -root			    \n\
-				fireworkx -root				    \n\
+-				fireworkx -root				    \n\
 -				fuzzyflakes -root			    \n\
 -				interaggregate -root			    \n\
 -				intermomentary -root			    \n\
@@ -259,7 +259,7 @@ programs:								      \
 - GL: 				winduprobot -root			    \n\
 - GL: 				splitflap -root				    \n\
 - GL: 				dymaxionmap -root			    \n\
-  GL: 				energystream -root			    \n\
+- GL: 				energystream -root			    \n\
 - GL: 				hydrostat -root				    \n\
 - GL: 				raverhoop -root				    \n\
 - GL: 				unicrud -root				    \n\
@@ -268,6 +268,15 @@ programs:								      \
 - GL: 				discoball -root				    \n\
 - GL: 				hexstrut -root				    \n\
 - GL: 				splodesic -root				    \n\
+  GL: 				esper -root				    \n\
+  GL: 				vigilance -root				    \n\
+- GL: 				crumbler -root				    \n\
+				filmleader -root			    \n\
+				glitchpeg -root				    \n\
+- GL: 				maze3d -root				    \n\
+- GL: 				peepers -root				    \n\
+- GL: 				razzledazzle -root			    \n\
+				vfeedback -root				    \n\
 
 
 pointerPollTime:    0:00:05
