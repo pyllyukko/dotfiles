@@ -4,7 +4,6 @@ e asm.syntax = intel
 e asm.pseudo = false
 e asm.esil = false
 e asm.middle = true # https://blog.xpnsec.com/radare2-using-emulation-to-unpack-metasploit-encoders/
-e asm.emu.str = true
 e graph.web = false # https://github.com/radare/radare2/issues/5662
 e anal.strings = true
 e bin.strings = true
