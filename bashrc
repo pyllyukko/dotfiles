@@ -128,3 +128,7 @@ bind '"\e[1;5D":backward-word'
 export LC_PAPER=fi_FI.utf8
 # week starts on monday
 export LC_TIME=en_GB.utf8
+
+# disable bracketed paste mode
+# https://unix.stackexchange.com/questions/196098/copy-paste-in-xfce4-terminal-adds-0-and-1#196574
+printf "\e[?2004l"
