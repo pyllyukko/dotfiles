@@ -10,6 +10,31 @@
 weekstart=Monday
 editor=vim
 
+# Bugwarrior UDAs
+uda.githubcreatedon.type=date
+uda.githubcreatedon.label=Github Created
+uda.githubnumber.type=numeric
+uda.githubnumber.label=Github Issue/PR #
+uda.githubtitle.type=string
+uda.githubtitle.label=Github Title
+uda.githubbody.type=string
+uda.githubbody.label=Github Body
+uda.githubtype.type=string
+uda.githubtype.label=Github Type
+uda.githubuser.type=string
+uda.githubuser.label=Github User
+uda.githuburl.type=string
+uda.githuburl.label=Github URL
+uda.githubupdatedat.type=date
+uda.githubupdatedat.label=Github Updated
+uda.githubrepo.type=string
+uda.githubrepo.label=Github Repo Slug
+uda.githubnamespace.type=string
+uda.githubnamespace.label=Github Namespace
+uda.githubmilestone.type=string
+uda.githubmilestone.label=Github Milestone
+# END Bugwarrior UDAs
+
 # Use the command 'task show' to see all defaults and overrides
 
 # Files
