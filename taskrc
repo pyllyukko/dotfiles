@@ -15,6 +15,10 @@ editor=vim
 # Files
 data.location=~/.task
 
+# Slackware
+#include /usr/share/doc/task/rc/holidays.fi-FI.rc
+# Debian
+#include /usr/share/taskwarrior/holidays.fi-FI.rc
 # Color theme (uncomment one to use)
 #include /usr/share/doc/task/rc/light-16.theme
 #include /usr/share/doc/task/rc/light-256.theme
