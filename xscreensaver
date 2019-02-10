@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.40 for pyllyukko on Sun Sep  9 17:30:52 2018.
+# Written by xscreensaver-demo 5.42 for pyllyukko on Sun Feb 10 22:34:09 2019.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -277,6 +277,7 @@ programs:								      \
 - GL: 				peepers -root				    \n\
 - GL: 				razzledazzle -root			    \n\
 				vfeedback -root				    \n\
+- GL: 				handsy -root				    \n\
 
 
 pointerPollTime:    0:00:05
