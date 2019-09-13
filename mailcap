@@ -1,1 +1,2 @@
 text/html; /usr/bin/w3m -o display_link_number=1 -I %{charset} -dump %s; nametemplate=%s.html; copiousoutput
+image/*; /usr/bin/cacaview %s;
