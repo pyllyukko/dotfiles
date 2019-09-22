@@ -14,6 +14,10 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
+" disable bracketed paste
+" https://vimhelp.org/term.txt.html#xterm-bracketed-paste
+set t_BE=
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
