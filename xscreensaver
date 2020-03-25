@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.42 for pyllyukko on Sun Feb 10 22:34:09 2019.
+# Written by xscreensaver-demo 5.44 for pyllyukko on Wed Mar 25 18:20:43 2020.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -147,6 +147,7 @@ programs:								      \
 - GL: 				menger -root				    \n\
 - GL: 				molecule -root				    \n\
 -				rotzoomer -root				    \n\
+-				scooter -root				    \n\
 -				speedmine -root				    \n\
 - GL: 				starwars -root				    \n\
 - GL: 				stonerview -root			    \n\
@@ -278,6 +279,10 @@ programs:								      \
 - GL: 				razzledazzle -root			    \n\
 				vfeedback -root				    \n\
 - GL: 				handsy -root				    \n\
+- GL: 				deepstars -root				    \n\
+- GL: 				gravitywell -root			    \n\
+- GL: 				etruscanvenus -root			    \n\
+  GL: 				gibson -root				    \n\
 
 
 pointerPollTime:    0:00:05
