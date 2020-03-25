@@ -45,6 +45,9 @@ then
 elif [ -S ${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh ]
 then
   export SSH_AUTH_SOCK=${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh
+elif [ -S "/run/user/$(/bin/id -u)/gnupg/S.gpg-agent.ssh" ]
+then
+  export SSH_AUTH_SOCK="/run/user/$(/bin/id -u)/gnupg/S.gpg-agent.ssh"
 # old method
 elif [ -f "${HOME}/.gnupg/gpg-agent-info-$(hostname)" ]
 then
