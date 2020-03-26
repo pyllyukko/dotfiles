@@ -20,6 +20,8 @@ set t_BE=
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
+" F11 for fullscreen https://askubuntu.com/a/338569
+map <silent> <F11> :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
