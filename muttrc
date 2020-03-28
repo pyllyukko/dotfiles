@@ -50,8 +50,9 @@ set	ssl_starttls
 unset	ssl_use_sslv2
 unset	ssl_use_sslv3
 unset	ssl_use_tlsv1
-set	ssl_use_tlsv1_1
+unset	ssl_use_tlsv1_1
 set	ssl_use_tlsv1_2
+set	ssl_use_tlsv1_3
 #set	ssl_usesystemcerts
 set	ssl_verify_dates
 set	ssl_verify_host
