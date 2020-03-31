@@ -1,0 +1,14 @@
+[general]
+targets = pyllyukkos_github_account
+legacy_matching = False
+taskrc = /home/pyllyukko/.taskrc
+annotation_comments = False
+static_fields = priority
+
+[pyllyukkos_github_account]
+service = github
+github.username = pyllyukko
+github.login = pyllyukko
+github.token = @oracle:eval:pass API/GitHub
+github.exclude_repos = grsec_confnbuild,metasploit_stuff,pcgen,sargraph
+github.add_tags = github
