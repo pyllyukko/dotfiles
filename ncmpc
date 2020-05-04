@@ -1,0 +1,18 @@
+##
+## Configuration file for ncmpc (~/.config/ncmpc/config)
+##
+
+############## Connection ###################
+## Connect to mpd on the specified port.
+port = 6600
+
+############## Display ######################
+## Show the bitrate in the status bar when playing a stream.
+visible-bitrate = yes
+
+## Change the XTerm title (ncmpc will not restore the title).
+set-xterm-title = yes
+
+############## Colors #######################
+## Enable/disable colors.
+enable-colors = yes
