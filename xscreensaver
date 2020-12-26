@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.44 for pyllyukko on Wed Mar 25 18:20:43 2020.
+# Written by xscreensaver-demo 5.45 for pyllyukko on Sat Dec 26 21:17:15 2020.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -111,7 +111,7 @@ programs:								      \
 - GL: 				sonar -root				    \n\
 - GL: 				stairs -root				    \n\
 -				truchet -root				    \n\
-				vidwhacker -root			    \n\
+-				vidwhacker -root			    \n\
 -				blaster -root				    \n\
 -				bumps -root				    \n\
 -				ccurve -root				    \n\
@@ -283,6 +283,10 @@ programs:								      \
 - GL: 				gravitywell -root			    \n\
 - GL: 				etruscanvenus -root			    \n\
   GL: 				gibson -root				    \n\
+- GL: 				beats -root				    \n\
+  GL: 				covid19 -root				    \n\
+  GL: 				headroom -root				    \n\
+- GL: 				sphereeversion -root			    \n\
 
 
 pointerPollTime:    0:00:05
