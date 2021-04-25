@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.45 for pyllyukko on Sat Dec 26 21:17:15 2020.
+# Written by xscreensaver-demo 6.00 for pyllyukko on Sun Apr 25 14:03:17 2021.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -10,18 +10,13 @@ passwdTimeout:	0:00:30
 visualID:	default
 installColormap:    True
 verbose:	False
-timestamp:	True
 splash:		True
 splashDuration:	0:00:05
 demoCommand:	xscreensaver-demo
-prefsCommand:	xscreensaver-demo -prefs
 nice:		10
-memoryLimit:	0
 fade:		True
 unfade:		False
 fadeSeconds:	0:00:03
-fadeTicks:	20
-captureStderr:	True
 ignoreUninstalledPrograms:False
 font:		*-medium-r-*-140-*-m-*
 dpmsEnabled:	True
@@ -42,6 +37,7 @@ textLiteral:	XScreenSaver
 textFile:	/usr/doc/netdate/COPYRIGHT
 textProgram:	/usr/games/fortune
 textURL:	https://en.wikipedia.org/w/index.php?title=Special:NewPages&feed=rss
+dialogTheme:	default
 
 programs:								      \
 -				maze -root				    \n\
@@ -79,7 +75,7 @@ programs:								      \
 -				moire -root				    \n\
 - GL: 				morph3d -root				    \n\
 -				mountain -root				    \n\
--				munch -root				    \n\
+				munch -root -classic			    \n\
 -				penrose -root				    \n\
 - GL: 				pipes -root				    \n\
 -				rd-bomb -root				    \n\
@@ -108,7 +104,7 @@ programs:								      \
 -				kumppa -root				    \n\
 - GL: 				lament -root				    \n\
 -				moire2 -root				    \n\
-- GL: 				sonar -root				    \n\
+  GL: 				sonar -root				    \n\
 - GL: 				stairs -root				    \n\
 -				truchet -root				    \n\
 -				vidwhacker -root			    \n\
@@ -207,7 +203,7 @@ programs:								      \
 -				fuzzyflakes -root			    \n\
 -				interaggregate -root			    \n\
 -				intermomentary -root			    \n\
--				memscroller -root			    \n\
+				memscroller -root			    \n\
 - GL: 				noof -root				    \n\
 				pacman -root				    \n\
 - GL: 				pinion -root				    \n\
@@ -289,13 +285,6 @@ programs:								      \
 - GL: 				sphereeversion -root			    \n\
 
 
-pointerPollTime:    0:00:05
 pointerHysteresis:  10
-windowCreationTimeout:0:00:30
-initialDelay:	0:00:00
-GetViewPortIsFullOfLies:False
-procInterrupts:	True
-xinputExtensionDev: False
-overlayStderr:	True
 authWarningSlack:   20
 
