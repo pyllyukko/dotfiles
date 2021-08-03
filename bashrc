@@ -38,23 +38,7 @@ fi
 
 # https://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
 export GPG_TTY=$(tty)
-# GnuPG 2.1
-if [ -S ~/.gnupg/S.gpg-agent.ssh ]
-then
-  export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
-elif [ -S ${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh ]
-then
-  export SSH_AUTH_SOCK=${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh
-elif [ -S "/run/user/$(/bin/id -u)/gnupg/S.gpg-agent.ssh" ]
-then
-  export SSH_AUTH_SOCK="/run/user/$(/bin/id -u)/gnupg/S.gpg-agent.ssh"
-# old method
-elif [ -f "${HOME}/.gnupg/gpg-agent-info-$(hostname)" ]
-then
-  . "${HOME}/.gnupg/gpg-agent-info-$(hostname)"
-  export GPG_AGENT_INFO
-  export SSH_AUTH_SOCK
-fi
+export SSH_AUTH_SOCK="$(/usr/bin/gpgconf --list-dirs agent-ssh-socket)"
 
 # https://www.gnupg.org/documentation/manuals/gnupg/Common-Problems.html
 if [ -n "${SSH_CONNECTION}" ]
