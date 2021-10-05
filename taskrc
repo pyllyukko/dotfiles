@@ -65,3 +65,7 @@ urgency.uda.priority.L.coefficient=0
 urgency.uda.priority..coefficient=1.8
 uda.price.type=numeric
 uda.price.label=Price
+report.money.description=Money
+report.money.columns=end,uuid.short,price,description.desc
+report.money.sort=end+
+report.money.filter=status:completed
