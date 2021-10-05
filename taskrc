@@ -63,3 +63,5 @@ include /usr/share/doc/task/rc/dark-green-256.theme
 uda.priority.values=H,M,,L
 urgency.uda.priority.L.coefficient=0
 urgency.uda.priority..coefficient=1.8
+uda.price.type=numeric
+uda.price.label=Price
