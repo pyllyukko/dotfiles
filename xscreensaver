@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 6.00 for pyllyukko on Sun Apr 25 14:03:17 2021.
+# Written by xscreensaver-demo 6.02 for pyllyukko on Sat Oct 16 13:35:28 2021.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -283,6 +283,8 @@ programs:								      \
   GL: 				covid19 -root				    \n\
   GL: 				headroom -root				    \n\
 - GL: 				sphereeversion -root			    \n\
+-				binaryhorizon -root			    \n\
+-				marbling -root				    \n\
 
 
 pointerHysteresis:  10
