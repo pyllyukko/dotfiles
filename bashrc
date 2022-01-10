@@ -120,3 +120,6 @@ export LC_TIME=en_GB.utf8
 # disable bracketed paste mode
 # https://unix.stackexchange.com/questions/196098/copy-paste-in-xfce4-terminal-adds-0-and-1#196574
 printf "\e[?2004l"
+
+# https://github.com/pypa/pip/issues/8090
+export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
