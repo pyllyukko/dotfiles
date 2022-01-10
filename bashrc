@@ -56,6 +56,7 @@ alias ls='ls ${LS_OPTIONS}'
 # http://vim.wikia.com/wiki/Launch_files_in_new_tabs_under_Unix
 export TAR_OPTIONS="--numeric-owner"
 alias r2dump="r2 -c 'px \$s' -n -q"
+alias r2file="r2 -c '/m' -n -q"
 
 threads=$(cat /proc/cpuinfo | grep vendor_id | wc -l)
 export	BUNDLEJOBS=${threads}
