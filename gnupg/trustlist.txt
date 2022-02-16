@@ -1,0 +1,6 @@
+# CN=VRK Gov. Root CA - G2
+# OU=Varmennepalvelut
+# OU=Certification Authority Services
+# O=Vaestorekisterikeskus CA
+# C=FI
+F4:35:F8:5F:01:08:DA:68:4E:7B:FD:51:7C:90:C6:27:BB:9A:6C:F5 S relax
