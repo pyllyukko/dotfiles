@@ -60,7 +60,16 @@ unset	ssl_verify_partial_chains
 #set	ssl_ciphers="AES+kEECDH:AES+kEDH:!aNULL:!DSS:!MD5:!SHA"
 set	ssl_force_tls
 
-unignore date	# show date in the mail reader
+# headers
+ignore *
+unignore date from to cc subject user-agent mail-followup-to x-mailer x-url Authentication-Results
+color header		brightgreen	default "^Authentication-Results:.*(dkim|dmarc|spf)=pass"
+color header		brightred	default (dkim|dmarc|spf)=fail
+color header		brightred	default "^Received-SPF: None"
+color header		brightred	default "^X-Amavis-Alert: INFECTED"
+color header		brightred	default "^X-Spam-Flag: YES"
+color header		brightgreen	default "Pass (sender SPF authorized)"
+set imap_headers=X-SPAM-STATUS
 
 # key bindings
 bind index G            imap-fetch-mail
