@@ -57,6 +57,7 @@ alias ls='ls ${LS_OPTIONS}'
 export TAR_OPTIONS="--numeric-owner"
 alias r2dump="r2 -c 'px \$s' -n -q"
 alias r2file="r2 -c '/m' -n -q"
+alias mucat="mutool draw -F txt"
 
 threads=$(cat /proc/cpuinfo | grep vendor_id | wc -l)
 export	BUNDLEJOBS=${threads}
