@@ -46,6 +46,8 @@ set	xterm_title="Mutt @%h"
 # https://gitlab.com/muttmua/mutt/-/issues/141
 set	rfc2047_parameters=yes
 set	send_charset="us-ascii:utf-8"
+# https://datatracker.ietf.org/doc/html/rfc6376#section-5.3
+unset	allow_8bit
 
 # TLS stuff
 #set	ssl_min_dh_prime_bits=1024
