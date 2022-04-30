@@ -45,6 +45,7 @@ set	xterm_set_titles
 set	xterm_title="Mutt @%h"
 # https://gitlab.com/muttmua/mutt/-/issues/141
 set	rfc2047_parameters=yes
+set	send_charset="us-ascii:utf-8"
 
 # TLS stuff
 #set	ssl_min_dh_prime_bits=1024
