@@ -70,6 +70,7 @@ ignore *
 unignore date from to cc subject user-agent mail-followup-to x-mailer x-url Authentication-Results
 color header		brightgreen	default "^Authentication-Results:.*(dkim|dmarc|spf)=pass"
 color header		brightred	default (dkim|dmarc|spf)=fail
+color header		brightyellow	default dmarc=none
 color header		brightred	default "^Received-SPF: None"
 color header		brightred	default "^X-Amavis-Alert: INFECTED"
 color header		brightred	default "^X-Spam-Flag: YES"
