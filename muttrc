@@ -72,7 +72,7 @@ color header		brightgreen	default "^Authentication-Results:.*(dkim|dmarc|spf)=pa
 color header		brightred	default (dkim|dmarc|spf)=fail
 color header		brightyellow	default (dmarc|spf)=none
 color header		brightred	default 'reason="invalid \(public key: not available\)"'	# dkim=neutral
-color header		brightred	default "^Received-SPF: ([Ff]ail|[Pp]ermerror)"
+color header		brightred	default "^Received-SPF: ([Ff]ail|([Pp]erm|[Tt]emp)error)"
 color header		brightyellow	default "^Received-SPF: ([Nn]eutral|[Nn]one)"
 color header		brightgreen	default "^Received-SPF: [Pp]ass"
 color header		brightred	default "^X-Amavis-Alert: INFECTED"
