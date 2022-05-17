@@ -67,7 +67,7 @@ set	ssl_force_tls
 
 # headers
 ignore *
-unignore date from to cc subject user-agent mail-followup-to x-mailer x-url Authentication-Results Received-SPF X-Amavis-Alert
+unignore date from to cc subject user-agent mail-followup-to x-mailer x-url Authentication-Results Received-SPF X-Amavis-Alert X-Hoxid
 color header		brightgreen	default "^Authentication-Results:.*(dkim|dmarc|spf)=pass"
 color header		brightred	default (dkim|dmarc|spf)=(fail|temperror)			# Authentication-Results
 color header		brightyellow	default (dmarc|spf)=none
@@ -77,6 +77,7 @@ color header		brightyellow	default "^Received-SPF: ([Nn]eutral|[Nn]one)"
 color header		brightgreen	default "^Received-SPF: [Pp]ass"
 color header		brightred	default "^X-Amavis-Alert: INFECTED"
 color header		brightred	default "^X-Spam-Flag: YES"
+color header		brightred	default "^X-Hoxid:"
 set imap_headers=X-SPAM-STATUS
 
 # key bindings
