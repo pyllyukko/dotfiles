@@ -58,6 +58,7 @@ export TAR_OPTIONS="--numeric-owner"
 alias r2dump="r2 -c 'px \$s' -n -q"
 alias r2file="r2 -c '/m' -n -q"
 alias mucat="mutool draw -F txt"
+alias ngrep="grep '^\(Nmap scan report for\|Host is\|PORT\|^[0-9]\+/[a-z]\+\s\+open[^|]\|Service Info\|OS details\|# Nmap done\)\b'"
 
 threads=$(cat /proc/cpuinfo | grep vendor_id | wc -l)
 export	BUNDLEJOBS=${threads}
