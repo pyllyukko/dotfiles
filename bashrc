@@ -43,7 +43,10 @@ export SSH_AUTH_SOCK="$(/usr/bin/gpgconf --list-dirs agent-ssh-socket)"
 # https://www.gnupg.org/documentation/manuals/gnupg/Common-Problems.html
 if [ -n "${SSH_CONNECTION}" ]
 then
-  gpg-connect-agent updatestartuptty /bye
+  if [ -S ~/.gnupg/S.gpg-agent ]
+  then
+    gpg-connect-agent updatestartuptty /bye
+  fi
 else
   # only use this locally
   alias gvim='gvim -p --servername gvim --remote-tab-silent'
