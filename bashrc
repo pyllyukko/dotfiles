@@ -109,8 +109,9 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 # jump between words with ctrl-(left|right)
 # https://stackoverflow.com/questions/5029118/bash-ctrl-to-move-cursor-between-words-strings
-bind '"\e[1;5C":forward-word'
-bind '"\e[1;5D":backward-word'
+# stderr redirection because of "line ###: bind: warning: line editing not enabled"
+bind '"\e[1;5C":forward-word' 2>/dev/null
+bind '"\e[1;5D":backward-word' 2>/dev/null
 # TODO: ctrl-backspace
 
 # locales
