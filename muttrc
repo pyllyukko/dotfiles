@@ -52,7 +52,7 @@ unset	allow_8bit
 # TLS stuff
 #set	ssl_min_dh_prime_bits=1024
 set	ssl_starttls
-unset	ssl_use_sslv2
+unset	ssl_use_sslv2			# OpenSSL only
 unset	ssl_use_sslv3
 unset	ssl_use_tlsv1
 unset	ssl_use_tlsv1_1
@@ -61,7 +61,7 @@ set	ssl_use_tlsv1_3
 #set	ssl_usesystemcerts
 set	ssl_verify_dates
 set	ssl_verify_host
-unset	ssl_verify_partial_chains
+unset	ssl_verify_partial_chains	# OpenSSL 1.0.2b and newer only
 #set	ssl_ciphers="AES+kEECDH:AES+kEDH:!aNULL:!DSS:!MD5:!SHA"
 set	ssl_force_tls
 
