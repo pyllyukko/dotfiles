@@ -1,0 +1,50 @@
+# -*-muttrc-*-
+
+# pyllyukko's mutt color theme
+
+color normal		cyan		default
+color hdrdefault	cyan		default
+color quoted		white		default
+color signature		white		default
+color indicator		brightwhite	cyan
+color error		black		red
+color status		black		cyan
+color tree		brightblack	default		# the thread tree in the index menu
+color tilde		brightblack	default
+color message		cyan		default
+color markers		brightblack	default
+color attachment	brightblack	default		# also all '^[--' in body
+color search		black		cyan		# how to hilite search patterns in the pager
+color index		brightcyan	default ~N	# new
+
+# compose menu - new since mutt 1.9.0
+# http://www.mutt.org/doc/manual/#color
+color compose security_none	brightred   default
+color compose security_sign	brightgreen default
+color compose security_both	brightgreen default
+color compose security_encrypt	brightgreen default
+
+# signed/encrypted
+color index	green		default (~g|~G|~k|~V)
+color index	brightgreen	default (~g|~G|~k)~N
+
+color index	brightblack	default ~T	# tagged
+color index	brightred	default ~D	# deleted, this needs to in the bottom
+color index	brightwhite	default ~F	# flagged
+
+# headers & body in pager
+color header	brightcyan	default ^(From|Subject):
+color body	brightcyan	default "(ftp|https?)://[^ )>]+"	# point out URLs. TODO: how to exclude square brackets? (CentOS has "(ftp|http|https)://[^ ]+")
+color body	brightcyan	default "CVE[-_][0-9]{4}[-_][0-9]{4,5}"	# CVEs (amavis has _)
+color body	brightcyan	default "SSA:[0-9]{4}-[0-9]{3}-[0-9]{2}"# slackware security advisories
+color body	brightcyan	default "MITKRB5-SA-[0-9]{4}-[0-9]{3}"	# MIT Kerberos SA
+color body	brightcyan	default [-a-z_0-9.]+@[-a-z_0-9.]+	# e-mail addresses
+color body	white		default "_{47}"				# footer delimeter in some mailing lists
+color body	white		default "^-{5}.*-{5}$"			# original|forwarded messaget etc.
+color body	white		default "━{78,79}"			# <hr> as seen on w3m
+color body	white		default "[_=]{40,}"
+color body	white		default "_{29,}"
+color body	brightcyan	default "\\*[a-z]+\\*"			# "bold"
+color body	white		default "^ *[*●•]"			# bullet lists
+color body	brightcyan	default "\\[[0-9]+\\]"			# URL refs
+color body	white		default "^ *[0-9]+\."			# ordered lists
