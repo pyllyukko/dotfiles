@@ -31,6 +31,9 @@ color index	brightgreen	default (~g|~G|~k)~N
 # not necessarily high priority mails...
 color index	white		default (~l|=C"@lists."|=C"@listserv."|=C"announce@"|=f"@listserv."|=f"notifications@"|=f"notify@"|=f"do-not-reply@"|~f"no-?reply[^@]*@"|=f"uutiskirje"|=f"newsletter@"|=f"@newsletter"|=s"logwatch"|=s"Tiger\\ Auditing\\ Report\\ for"|=s"rkhunter\\ Daily\\ Run\\ on"|=f"daemon"|=f"logcheck\\ system"|=f"Anacron"|=f"Charlie\\ Root"|=s"Daily\\ AIDE\\ report\\ for")
 
+# spam needs to be below newsletter, etc
+color index	red		default ~s'[*]{3}\(Spam\|INFECTED\)[*]{3}'	# spam
+
 color index	brightblack	default ~T	# tagged
 color index	brightred	default ~D	# deleted, this needs to in the bottom
 color index	brightwhite	default ~F	# flagged
