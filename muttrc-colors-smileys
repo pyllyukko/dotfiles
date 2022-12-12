@@ -1,0 +1,19 @@
+# https://en.wikipedia.org/wiki/List_of_emoticons
+# http://pubs.opengroup.org/onlinepubs/007904875/basedefs/xbd_chap09.html#tag_09_03_05
+
+# western
+#   * B & D as eyes matches too much regular text (or acronyms)
+#   * 0 & 3 as mouth
+#   * 8 as eyes matches too much regular text (8p, 8), etc.)
+color body brightyellow default "[>}0O3]?[:;=]'?[-^oc]?[][(){}<>cDpPLSO/\\|]"
+
+# unicode
+color body brightyellow default "[☺️☻😊😋😌😀😁😃😄😆😍☹️😠😡😞😟😣😖😢😭😂😨😧😦😰😱😫😩😮😯😲😗😙😚😘😉😜😛😝😕😐😑😅😳😓😥😶😇😈😎😪😏😒😵😷😺😸😹😻😼😽🙀😿😾🐱😴😔⚡☀️]"
+
+# kaomoji
+# TODO: also highlights .^
+#                       ...
+#   * removed . as eyes, as they were highlighting "..." etc. nose was more common
+color body brightyellow default "\\(?[+>°≧·◕ಠ^][_oO∇ヮω.-]?[+<°≦·◕ಠ^]\\)?[/>]?"
+
+color body brightred default "❤"
