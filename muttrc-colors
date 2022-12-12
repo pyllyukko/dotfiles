@@ -32,6 +32,9 @@ color index	brightblack	default ~T	# tagged
 color index	brightred	default ~D	# deleted, this needs to in the bottom
 color index	brightwhite	default ~F	# flagged
 
+# not necessarily high priority mails...
+color index	white		default (~l|=C"@lists."|=C"@listserv."|=C"announce@"|=f"@listserv."|=f"notifications@"|=f"notify@"|=f"do-not-reply@"|~f"no-?reply[^@]*@"|=f"uutiskirje"|=f"newsletter@"|=f"@newsletter"|=s"logwatch"|=s"Tiger\\ Auditing\\ Report\\ for"|=s"rkhunter\\ Daily\\ Run\\ on"|=f"daemon"|=f"logcheck\\ system"|=f"Anacron"|=f"Charlie\\ Root"|=s"Daily\\ AIDE\\ report\\ for")
+
 # headers & body in pager
 color header	brightcyan	default ^(From|Subject):
 color body	brightcyan	default "(ftp|https?)://[^ )>]+"	# point out URLs. TODO: how to exclude square brackets? (CentOS has "(ftp|http|https)://[^ ]+")
