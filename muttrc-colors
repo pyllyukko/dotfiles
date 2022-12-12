@@ -34,6 +34,9 @@ color index	white		default (~l|=C"@lists."|=C"@listserv."|=C"announce@"|=f"@list
 # spam needs to be below newsletter, etc
 color index	red		default ~s'[*]{3}\(Spam\|INFECTED\)[*]{3}'	# spam
 
+# highlight NEW security advisories and other potentially important stuff:
+color index		brightwhite	default (=C"debian-security-announce@lists.debian.org"|=f"security@slackware.com"|=s"SECURITY\\ information\\ for")~N
+
 color index	brightblack	default ~T	# tagged
 color index	brightred	default ~D	# deleted, this needs to in the bottom
 color index	brightwhite	default ~F	# flagged
