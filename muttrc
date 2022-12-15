@@ -19,7 +19,7 @@ set header_cache=~/.mutt/header_cache
 set smime_ask_cert_label=no
 set smime_encrypt_with="aes256"
 set forward_format="Fwd: %s"
-set reply_regexp="^(re|aw|vs):[ \t]*"
+set reply_regexp="^(re|aw|vs)(\[[0-9]+\])*:[ \t]*"
 
 alternative_order text/plain text/html
 
