@@ -29,7 +29,7 @@ color index	green		default (~g|~G|~k|~V)
 color index	brightgreen	default (~g|~G|~k)~N
 
 # not necessarily high priority mails...
-color index	white		default (~l|=C"@lists."|=C"@listserv."|=C"announce@"|=f"@listserv."|=f"notifications@"|=f"notify@"|~f"do[-_]not[-_]reply@"|~f"no-?reply[^@]*@"|=f"marketing@"|=f"uutiskirje"|=f"newsletter@"|=f"@newsletter"|=s"logwatch"|=s"Tiger\\ Auditing\\ Report\\ for"|=s"rkhunter\\ Daily\\ Run\\ on"|=f"daemon"|=f"logcheck\\ system"|=f"Anacron"|=f"Charlie\\ Root"|=s"Daily\\ AIDE\\ report\\ for"|=s"unattended-upgrades\\ result\\ for")
+color index	white		default (~l|=C"@lists."|=C"@listserv."|=C"announce@"|=f"@listserv."|=f"notifications@"|=f"notify@"|~f"do[-_]not[-_]reply@"|~f"no-?reply[^@]*@"|=f"marketing@"|=f"uutiskirje"|=f"newsletter"|=s"logwatch"|=s"Tiger\\ Auditing\\ Report\\ for"|=s"rkhunter\\ Daily\\ Run\\ on"|=f"daemon"|=f"logcheck\\ system"|=f"Anacron"|=f"Charlie\\ Root"|=s"Daily\\ AIDE\\ report\\ for"|=s"unattended-upgrades\\ result\\ for")
 
 # spam needs to be below newsletter, etc
 color index	red		default ~s'[*]{3}\(Spam\|INFECTED\)[*]{3}'	# spam
