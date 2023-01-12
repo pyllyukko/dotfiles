@@ -10,3 +10,4 @@ e bin.strings = true
 e cfg.fortunes.type = tips,fun,creepy,nsfw
 e scr.utf8.curvy = true
 e anal.hasnext = true
+e anal.depth = 256
