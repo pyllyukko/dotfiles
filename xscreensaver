@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 6.06 for pyllyukko on Sun Mar 12 11:56:19 2023.
+# Written by xscreensaver-demo 6.06 for pyllyukko on Thu Apr  6 22:55:01 2023.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -19,10 +19,10 @@ unfade:		False
 fadeSeconds:	0:00:03
 ignoreUninstalledPrograms:False
 dpmsEnabled:	True
-dpmsQuickOff:	False
-dpmsStandby:	0:20:00
-dpmsSuspend:	0:20:00
-dpmsOff:	0:30:00
+dpmsQuickOff:	True
+dpmsStandby:	0:15:00
+dpmsSuspend:	0:30:00
+dpmsOff:	1:00:00
 grabDesktopImages:  False
 grabVideoFrames:    False
 chooseRandomImages: True
