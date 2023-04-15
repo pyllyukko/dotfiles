@@ -75,7 +75,7 @@ color header		brightred	default 'reason="invalid \(public key: not available\)"'
 color header		brightred	default "^Received-SPF: ([Ff]ail|([Pp]erm|[Tt]emp)error)"
 color header		brightyellow	default "^Received-SPF: ([Nn]eutral|[Nn]one)"
 color header		brightgreen	default "^Received-SPF: [Pp]ass"
-color header		brightred	default "^X-Amavis-Alert: INFECTED"
+color header		brightred	default "^X-Amavis-Alert:"
 color header		brightred	default "^X-Spam-Flag: YES"
 color header		brightred	default "^X-Hoxid:"
 set imap_headers=X-SPAM-STATUS
