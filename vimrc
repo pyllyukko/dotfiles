@@ -114,6 +114,10 @@ set tags=./tags;~
 set wildmode=list:full
 set wildmenu
 
+" https://twitter.com/vim_tricks/status/1619803224906539009
+" cursorcolumn
+" set cuc
+
 " http://vim.wikia.com/wiki/Show_tab_number_in_your_tab_line
 set showtabline=1
 " set up tab labels with tab number, buffer name, number of windows
