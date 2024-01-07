@@ -19,10 +19,12 @@ then
 fi
 if [ "${charmap}" = "UTF-8" ]
 then
-  if [ -f /usr/doc/git-*/contrib/completion/git-prompt.sh ]
+  gitprompts=(/usr/doc/git-*/contrib/completion/git-prompt.sh)
+  if [ ${#gitprompts[*]} -eq 1 -a -f "${gitprompts[0]}" ]
   then
-    . /usr/doc/git-*/contrib/completion/git-prompt.sh
+    . "${gitprompts[0]}"
   fi
+  unset gitprompts
   if declare -F __git_ps1 1>/dev/null
   then
     #PS1="${TITLEBAR}\$? \$([ \$? -eq 0 ] && echo \"\[\033[01;32m\]\342\234\223\[\033[00m\]\" || echo \"\[\033[01;31m\]\342\234\227\[\033[00m\]\") @\h:\w\$(__git_ps1 \" (%s)\")\\$ "
