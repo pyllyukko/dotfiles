@@ -1,4 +1,8 @@
-# prompt
+# https://bobcares.com/blog/rsync-error-protocol-incompatibility/
+if [[ $- != *i* ]] ; then
+  # Shell is non-interactive. Be done now!
+  return
+fi
 
 # CentOS global bashrc
 if [ -f /etc/bashrc ]
@@ -99,6 +103,7 @@ export LESSOPEN
 export LESS="--RAW-CONTROL-CHARS"
 export PAGER="/usr/bin/less -i"
 export MANPAGER="/usr/bin/less -is"
+
 export EDITOR="/usr/bin/vim"
 #export GREP_OPTIONS="--color=auto"
 if [ -n "${GOROOT}" ]
