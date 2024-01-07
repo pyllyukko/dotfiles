@@ -38,19 +38,21 @@ fi
 
 # https://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
 export GPG_TTY=$(tty)
-export SSH_AUTH_SOCK="$(/usr/bin/gpgconf --list-dirs agent-ssh-socket)"
-
-# https://www.gnupg.org/documentation/manuals/gnupg/Common-Problems.html
-if [ -n "${SSH_CONNECTION}" ]
+if [ -z "${SSH_CONNECTION}" ]
 then
-  if [ -S ~/.gnupg/S.gpg-agent ]
-  then
-    gpg-connect-agent updatestartuptty /bye
-  fi
-else
-  # only use this locally
+  export SSH_AUTH_SOCK="$(/usr/bin/gpgconf --list-dirs agent-ssh-socket)"
   alias gvim='gvim -p --servername gvim --remote-tab-silent'
 fi
+
+# https://www.gnupg.org/documentation/manuals/gnupg/Common-Problems.html
+# 2024: Commented out to test agent-forwarding.
+#if [ -n "${SSH_CONNECTION}" ]
+#then
+#  if [ -S ~/.gnupg/S.gpg-agent ]
+#  then
+#    gpg-connect-agent updatestartuptty /bye
+#  fi
+#fi
 
 LS_OPTIONS='--color=auto'
 eval "`/usr/bin/dircolors -b`"
@@ -131,3 +133,13 @@ printf "\e[?2004l"
 
 # https://github.com/pypa/pip/issues/8090
 export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
+
+# https://wiki.gnupg.org/AgentForwarding
+# When XDG_RUNTIME_DIR doesn't exist SSH tries to forward the socket before
+# .bashrc can create socketdir and the forwarding fails. Hence the hack below.
+if [ ! -d "/run/user/$(id -u)/gnupg" -a \
+     -S "/run/user/$(id -u)/S.gpg-agent" ]
+then
+  /usr/bin/gpgconf --create-socketdir
+  /bin/ln -s "/run/user/$(id -u)/S.gpg-agent" "/run/user/$(id -u)/gnupg/S.gpg-agent"
+fi
