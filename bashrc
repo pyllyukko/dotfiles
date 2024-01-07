@@ -6,7 +6,7 @@ then
   source /etc/bashrc
 fi
 
-charmap=$( locale charmap )
+charmap="$(locale charmap)"
 if [[ ${TERM} =~ ^xterm.* ]]
 then
   TITLEBAR='\[\033]0;@\h\007\]'
