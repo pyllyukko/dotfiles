@@ -37,7 +37,7 @@ else
 fi
 
 # https://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
-export GPG_TTY=$(tty)
+export GPG_TTY="$(tty)"
 if [ -z "${SSH_CONNECTION}" ]
 then
   export SSH_AUTH_SOCK="$(/usr/bin/gpgconf --list-dirs agent-ssh-socket)"
@@ -55,7 +55,7 @@ fi
 #fi
 
 LS_OPTIONS='--color=auto'
-eval "`/usr/bin/dircolors -b`"
+eval "$(/usr/bin/dircolors -b)"
 alias ls='ls ${LS_OPTIONS}'
 # http://vim.wikia.com/wiki/Enable_servername_capability_in_vim/xterm
 # http://vim.wikia.com/wiki/Launch_files_in_new_tabs_under_Unix
@@ -66,15 +66,10 @@ alias mucat="mutool draw -F txt"
 alias ngrep="grep '^\(Nmap scan report for\|Host is\|PORT\|^[0-9]\+/[a-z]\+\s\+open[^|]\|Service Info\|OS details\|# Nmap done\)\b'"
 alias cgps="ps -axo user,pid,tty,command,cgroup"
 
-threads=$(cat /proc/cpuinfo | grep vendor_id | wc -l)
-export	BUNDLEJOBS=${threads}
+threads="$(/usr/bin/nproc)"
+export	BUNDLEJOBS="${threads}"
 export	MAKEFLAGS="-j ${threads}"
 unset	threads
-
-if /usr/bin/gpg2 --version 2>/dev/null | head -1 | grep -q "^gpg.*2\.1.[0-9]\+$"
-then
-  alias gpg='/usr/bin/gpg2'
-fi
 
 shopt -s checkwinsize
 
