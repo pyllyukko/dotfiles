@@ -106,6 +106,10 @@ set foldnestmax=5
 " sh.vim
 let g:sh_fold_enabled=3	" (enables function and heredoc folding)
 let g:xml_syntax_folding=1
+" Markdown folding
+" https://stackoverflow.com/questions/3828606/vim-markdown-folding
+let g:markdown_folding = 1
+
 
 " https://stackoverflow.com/questions/5017500/vim-difficulty-setting-up-ctags-source-in-subdirectories-dont-see-tags-file-i
 set tags=./tags;~
