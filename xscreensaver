@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 6.06 for pyllyukko on Thu Apr  6 22:55:01 2023.
+# Written by xscreensaver-settings 6.08 for pyllyukko on Sun Apr  7 12:17:55 2024.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -290,6 +290,10 @@ programs:								      \
   GL: 				mapscroller --root			    \n\
 - GL: 				nakagin --root				    \n\
 - GL: 				squirtorus --root			    \n\
+- GL: 				cubocteversion --root			    \n\
+				droste --root				    \n\
+- GL: 				papercube --root			    \n\
+  GL: 				skulloop --root				    \n\
 
 
 pointerHysteresis:  10
