@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.08 for pyllyukko on Sun Apr  7 12:17:55 2024.
+# Written by xscreensaver-settings 6.08 for pyllyukko on Sun May 12 11:18:46 2024.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -280,7 +280,7 @@ programs:								      \
 - GL: 				etruscanvenus --root			    \n\
   GL: 				gibson --root				    \n\
 - GL: 				beats --root				    \n\
-  GL: 				covid19 --root				    \n\
+- GL: 				covid19 --root				    \n\
   GL: 				headroom --root				    \n\
 - GL: 				sphereeversion --root			    \n\
 -				binaryhorizon --root			    \n\
