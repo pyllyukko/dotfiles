@@ -69,7 +69,7 @@ set	ssl_force_tls
 ignore *
 unignore date from to cc subject user-agent mail-followup-to x-mailer x-url Authentication-Results Received-SPF X-Amavis-Alert X-Hoxid
 color header		brightgreen	default "^Authentication-Results:.*(dkim|dmarc|spf)=pass"
-color header		brightred	default (dkim|dmarc|spf)=(fail|temperror)			# Authentication-Results
+color header		brightred	default (dkim|dmarc|spf)=((temp)?fail|temperror)		# Authentication-Results
 color header		brightyellow	default (dmarc|spf)=none
 color header		brightred	default 'reason="invalid \(public key: not available\)"'	# dkim=neutral
 color header		brightred	default "^Received-SPF: ([Ff]ail|([Pp]erm|[Tt]emp)error)"
@@ -92,3 +92,4 @@ color body brightgreen	default "^Verification successful$"
 color body brightred	default "^Verification failure$"
 color body brightred	default "^Problem signature"
 color body brightgreen	default "^Good signature"
+color body brightyellow	default "^WARNING: We have NO indication whether the key belongs to the person named as shown above$"
