@@ -69,7 +69,7 @@ set	ssl_force_tls
 ignore *
 unignore date from to cc subject user-agent mail-followup-to x-mailer x-url Authentication-Results Received-SPF X-Amavis-Alert X-Hoxid
 color header		brightgreen	default "^Authentication-Results:.*(dkim|dmarc|spf)=pass"
-color header		brightred	default (dkim|dmarc|spf)=((temp)?fail|temperror)		# Authentication-Results
+color header		brightred	default (dkim|dmarc|spf)=((temp)?fail|(temp|perm)error)		# Authentication-Results
 color header		brightyellow	default (dmarc|spf)=none
 color header		brightred	default 'reason="invalid \(public key: not available\)"'	# dkim=neutral
 color header		brightred	default "^Received-SPF: ([Ff]ail|([Pp]erm|[Tt]emp)error)"
@@ -80,7 +80,7 @@ color header		brightred	default "^X-Spam-Flag: YES"
 color header		brightred	default "^X-Hoxid:"
 color header		brightgreen	default "ESMTPSA?"	# TLS
 color header		brightred	default "ESMTPA"	# AUTH without TLS
-color header		brightcyan	default "^X-Virus-Scanned:"
+color header		brightcyan	default "^X-(Virus-Scanned|Amavis-OS-Fingerprint):"
 color header		brightcyan	default "^ARC-Authentication-Results:"
 set imap_headers=X-SPAM-STATUS
 
