@@ -80,7 +80,7 @@ color header		brightred	default "^X-Spam-Flag: YES"
 color header		brightred	default "^X-Hoxid:"
 color header		brightgreen	default "ESMTPSA?"	# TLS
 color header		brightred	default "ESMTPA"	# AUTH without TLS
-color header		brightcyan	default "^X-(Virus-Scanned|Amavis-OS-Fingerprint):"
+color header		brightcyan	default "^X-(Virus-Scanned|Amavis-OS-Fingerprint|Spam-Score|Amavis-Modified|Quarantine-ID):"
 color header		brightcyan	default "^ARC-Authentication-Results:"
 set imap_headers=X-SPAM-STATUS
 
