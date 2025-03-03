@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.08 for pyllyukko on Thu May 16 17:12:58 2024.
+# Written by xscreensaver-settings 6.09 for pyllyukko on Mon Mar  3 22:24:45 2025.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -294,6 +294,8 @@ programs:								      \
 				droste --root				    \n\
 - GL: 				papercube --root			    \n\
   GL: 				skulloop --root				    \n\
+- GL: 				highvoltage --root			    \n\
+- GL: 				kallisti --root				    \n\
 
 
 pointerHysteresis:  10
