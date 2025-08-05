@@ -145,3 +145,8 @@ then
   /usr/bin/gpgconf --create-socketdir
   /bin/ln -s "/run/user/$(id -u)/S.gpg-agent" "/run/user/$(id -u)/gnupg/S.gpg-agent"
 fi
+
+if [ -S /var/run/icecc/iceccd.socket -a -d /usr/libexec/icecc/bin ]
+then
+  export PATH="/usr/libexec/icecc/bin:${PATH}"
+fi
