@@ -23,7 +23,7 @@ then
 fi
 if [ "${charmap}" = "UTF-8" ]
 then
-  gitprompts=(/usr/doc/git-*/contrib/completion/git-prompt.sh /usr/lib/git-core/git-sh-prompt)
+  gitprompts=(/usr/doc/git-*/contrib/completion/git-prompt.sh)
   if [ ${#gitprompts[*]} -eq 1 -a -f "${gitprompts[0]}" ]
   then
     . "${gitprompts[0]}"
