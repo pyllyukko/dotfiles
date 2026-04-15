@@ -37,10 +37,24 @@ then
   fi
   if declare -F __git_ps1 1>/dev/null
   then
-    #PS1="${TITLEBAR}\$? \$([ \$? -eq 0 ] && echo \"\[\033[01;32m\]\342\234\223\[\033[00m\]\" || echo \"\[\033[01;31m\]\342\234\227\[\033[00m\]\") @\h:\w\$(__git_ps1 \" (%s)\")\\$ "
     GIT_PS1_SHOWDIRTYSTATE=true
     GIT_PS1_SHOWCOLORHINTS=true
-    PROMPT_COMMAND='__git_ps1 "${TITLEBAR}${VIRTUAL_ENV:+($(basename ${VIRTUAL_ENV})) }\$? \$([ \$? -eq 0 ] && echo \"\[\033[01;32m\]\342\234\223\[\033[00m\]\" || echo \"\[\033[01;31m\]\342\234\227\[\033[00m\]\") @\h:\w" "\\\$ "'
+    # Debian default prompt colors from /etc/skel/.bashrc
+    #deb_1=$'\[\033[01;32m\]'
+    #deb_2=$'\[\033[01;34m\]'
+    deb_1=""
+    deb_2=""
+    PROMPT_COMMAND='
+      _rc=$?;
+      if [ $_rc -eq 0 ]; then
+        _sym="\[\033[01;32m\]"
+      else
+        _sym="\[\033[01;31m\]"
+      fi;
+      _pad=$(printf "%3d" $_rc);
+      __git_ps1 \
+        "${TITLEBAR}${VIRTUAL_ENV:+($(basename ${VIRTUAL_ENV})) }[${_sym}${_pad}\[\033[00m\]] ${deb_1}@\h\[\033[00m\]:${deb_2}\w\[\033[00m\]" \
+        "\\\$ "'
   else
     PS1="${TITLEBAR}\$? \$([ \$? -eq 0 ] && echo \"\[\033[01;32m\]\342\234\223\[\033[00m\]\" || echo \"\[\033[01;31m\]\342\234\227\[\033[00m\]\") @\h:\w\\$ "
   fi
