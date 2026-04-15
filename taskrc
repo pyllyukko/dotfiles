@@ -9,6 +9,8 @@
 #   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
 weekstart=Monday
 editor=vim
+search.case.sensitive=0
+regex=1
 
 # Bugwarrior UDAs
 uda.githubcreatedon.type=date
